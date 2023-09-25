@@ -1,0 +1,68 @@
+body {
+        background-color: #ffe1e6; /* Light pink background */
+            font-family: 'Cascadia Code', monospace; /* Set the font family for the rest of the text */
+        }
+        h1 {
+            font-family: 'Broadway', cursive; /* Set the font family to Broadway */
+            color: #ff66b2; /* Barbie pink text color */
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin: 0 auto;
+            background-color: #fff; /* White background for the table */
+            border: 2px solid #ff66b2; /* Barbie pink border */
+        }
+        td {
+            padding: 10px;
+        }
+        input[type="text"],
+        input[type="password"],
+        input[type="date"],
+        input[type="number"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 5px;
+            border: 1px solid #ff66b2; /* Barbie pink border */
+            border-radius: 5px;
+            background-color: #fff; /* White background for input fields */
+        }
+        select {
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            background: url('arrow.png') no-repeat right; /* Add an arrow image for select fields */
+        }
+        input[type="file"] {
+            border: none;
+            background-color: transparent;
+        }
+        input[type="submit"] {
+            background-color: #ff66b2; /* Barbie pink submit button color */
+            color: #fff; /* White text color for submit button */
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button-common {
+			background-color: #f5a3b6; /* Light pink button color */
+			color: #fff; /* White text color for buttons */
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+
+        /* Font style for buttons, textboxes, radio buttons, checkboxes, and select elements */
+        input[type="button"],
+        input[type="radio"],
+        input[type="checkbox"],
+        input[type="text"],
+        select,
+        label.checkbox-label {
+            font-family: 'Candara Light', monospace; /* Set the font family for these elements */
+        }
+	}
