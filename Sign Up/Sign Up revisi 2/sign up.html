@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign Up</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <form action="Biodata.php" method = "POST" enctype ="multipart/form-data">
+		<table align = 'center'>
+			<tr align ='center'>
+				<td colspan = '3'><h1>Sign Up Pendaftaran </strong></h1><br></td>
+			</tr>
+			<tr>
+				<td>First name</td>
+				<td>:</td>
+				<td><input type = "text" name = "first_name"></td>
+			</tr>
+			<tr>
+				<td>Last name</td>
+				<td>:</td>
+				<td><input type = "text" name = "last_name" /></td>
+			</tr>
+			<tr>
+				<td>Password</td>
+				<td>:</td>
+				<td><input type = "text" name = "password" /></td>
+			</tr>
+			<tr>
+				<td>Confirm Password</td>
+				<td>:</td>
+				<td><input type="password" name="confirm_password"></td>
+			</tr>
+			<tr>
+				<td>Religion</td>
+				<td>:</td>
+				<td>
+					<select name = "dropdown">
+						<option value = "Catholic" selected>Catholic</option>
+						<option value = "Protestan">Protestan</option>
+						<option value = "Buddhism">Buddhism</option>
+						<option value = "Hinduism">Hinduism</option>
+						<option value = "Muslim">Muslim</option>
+						<option value = "Khonghucu">Khonghucu</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Phone Number</td>
+				<td>:</td>
+				<td><input type = "text" name = "Number"/ value ="+62"></td>
+			</tr>
+			<tr>
+				<td>Email</td>
+				<td>:</td>
+				<td><input type = "text" name = "email" /></td>
+			</tr>
+			<tr>
+				<td>Date of Birth</td>
+				<td>:</td>
+				<td><input type = "date" name = "birthday"/></td>
+			</tr>
+			<tr>
+				<td>Height</td>
+				<td>:</td>
+				<td><input type = "number" name = "height"/></td>
+			</tr>
+			<tr>
+				<td>Weight</td>
+				<td>:</td>
+				<td><input type = "number" name = "Weight"/></td>
+			</tr>
+			<tr>
+				<td>Age</td>
+				<td>:</td>
+				<td><input type = "number" name = "age"/></td>
+			</tr>
+			<tr>
+				<td>Address</td>
+				<td>:</td>
+				<td>
+					<textarea rows = "5" cols = "50" name = "description">
+					</textarea>
+				</td>
+			</tr>
+			<tr>
+				<td>Nationality</td>
+				<td>:</td>
+				<td>
+					<input type = "radio" name = "Nationality" value = "WNI"> WNI
+					<input type = "radio" name = "Nationality" value = "WNA"> WNA
+				</td>
+			</tr>
+			<tr>
+				<td>Marriage Status</td>
+				<td>:</td>
+				<td>
+					<input type = "radio" name = "Marriage" value = "Married"> Married
+					<input type = "radio" name = "Marriage" value = "Single"> Single
+				</td>
+			</tr>
+			<tr>
+				<td>Hobbies</td>
+				<td>:</td>
+				<td>
+					<input type = "checkbox" name = "music" value = "on"> Music
+					<input type = "checkbox" name = "sports" value = "on"> Sports
+					<input type = "checkbox" name = "arts" value = "on"> Arts
+				</td>
+			</tr>
+			<tr>
+				<td>Gender</td>
+				<td>:</td>
+				<td>
+					<input type = "radio" name = "Gender" value = "male"> Male
+					<input type = "radio" name = "Gender" value = "female"> Female
+				</td>
+			</tr>
+			<tr>
+				<td>Major</td>
+				<td>:</td>
+				<td>
+					<select name = "dropdown">
+						<option value = "Information System" selected>Information System</option>
+						<option value = "Informatics">Informatics</option>
+						<option value = "Information Technology">Information Technology</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Photo</td>
+				<td>:</td>
+				<td>
+					<input type = "file" name = "fileupload" accept = "image/*" /> 
+					<!-- ini kwa tu * to say that all file type is ok -->
+				</td>
+			</tr>
+			<tr>
+				<td>Father's Name</td>
+				<td>:</td>
+				<td><input type = "text" name = "F_Name" /></td>
+			</tr>
+			<tr>
+				<td>Mother's Name</td>
+				<td>:</td>
+				<td><input type = "text" name = "M_name" /></td>
+			</tr>
+			<tr>
+				<td>Parent's Address</td>
+				<td>:</td>
+				<td>
+					<textarea rows = "5" cols = "50" name = "description">
+					</textarea>
+				</td>
+			</tr>
+			<tr align = 'right'>
+				<td><input type="reset" name="reset" value="Reset" class="button-common"></td>
+				<td></td>
+				<td>
+					<button type="submit" id="signupButton" class="button-common">Sign Up</button>
+				</td>
+			</tr>
+		</table>
+	</form>
+	
+	<script>
+        // Basic form validation using JavaScript
+        document.getElementById('signupForm').addEventListener('submit', function(event) {
+            const passwordInput = document.querySelector('input[name="password"]');
+            const confirmPasswordInput = document.querySelector('input[name="confirm_password"]');
+            
+            if (passwordInput.value !== confirmPasswordInput.value) {
+                alert('Passwords do not match!');
+                event.preventDefault(); // Prevent form submission
+            }
+        });
+    </script>
+</body>
+</html>
