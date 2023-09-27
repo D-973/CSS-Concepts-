@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <style>
+        body {
+            text-align: center; /* Center the content horizontally */
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+            background-color: #ffcccc; /* Light pink background color */
+        }
+        h1 {
+            margin-top: 20px; /* Add some space above the heading */
+            color: #ff0066; /* Pink text color */
+        }
+        table {
+            margin: 20px auto; /* Center the table horizontally */
+            text-align: left; /* Reset text alignment within the table */
+            background-color: #fff; /* White background for the table */
+            border-radius: 40px; /* Rounded corners for the table */
+            padding: 20px; /* Add some spacing inside the table */
+        }
+        tr {
+            margin-bottom: 10px; /* Add spacing between table rows */
+        }
+        td.label {
+            padding-right: 10px; /* Add right padding for label cells */
+        }
+        td.input {
+            padding-bottom: 10px; /* Add bottom padding for input cells */
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%; /* Make input fields span the table width */
+            padding: 10px; /* Add padding to input fields */
+            border: 1px solid #ff0066; /* Pink border */
+            border-radius: 5px; /* Rounded corners for input fields */
+        }
+        input[type="submit"],
+        input[type="reset"] {
+            background-color: #ff0066; /* Pink background color for buttons */
+            color: #fff; /* White text color for buttons */
+            padding: 10px 20px; /* Add padding to buttons */
+            border: none; /* Remove button border */
+            border-radius: 5px; /* Rounded corners for buttons */
+            cursor: pointer; /* Add pointer cursor on hover */
+            margin-right: 10px; /* Add right margin to buttons for spacing */
+        }
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #ff0055; /* Darker pink background color on hover */
+        }
+    </style>
+</head>
+<body>
+    <h1>Login</h1>
+    <form action="Biodata.php" method="POST" enctype="multipart/form-data">
+        <table>
+            <tr>
+                <td class="label"><label for="name">Name</label></td>
+				<td>:</td>
+                <td class="input"><input type="text" id="name" name="name" required></td>
+            </tr>
+            <tr>
+                <td class="label"><label for="email">Email:</label></td>
+				<td>:</td>
+                <td class="input"><input type="email" id="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td class="label"><label for="password">Password:</label></td>
+				<td>:</td>
+                <td class="input"><input type="password" id="password" name="password" required></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="reset" value="Reset">				
+                </td>
+				<td></td>
+				<td align = "right"><input type="submit" value="Login"> </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
